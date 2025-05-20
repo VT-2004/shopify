@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Lady Dior Bag</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="product-container">
+        <div class="product-layout">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/gray.png" alt="Small Lady Dior Bag" class="main-image" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnails-wrapper">
+                        <div class="thumbnails">
+                            <button class="thumbnail active" data-image="assets/gray.png" data-color="gray">
+                                <img src="assets/gray.png" alt="Gray Lady Dior Bag">
+                            </button>
+                            <button class="thumbnail" data-image="assets/black.png" data-color="black">
+                                <img src="assets/black.png" alt="Black Lady Dior Bag">
+                            </button>
+                            <button class="thumbnail" data-image="assets/red.png" data-color="red">
+                                <img src="assets/red.png" alt="Red Lady Dior Bag">
+                            </button>
+                            <button class="thumbnail" data-image="assets/purple.png" data-color="purple">
+                                <img src="assets/purple.png" alt="Purple Lady Dior Bag">
+                            </button>
+                            <button class="thumbnail" data-image="assets/yellow.png" data-color="yellow">
+                                <img src="assets/yellow.png" alt="Yellow Lady Dior Bag">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-details">
+                <h1 class="product-title">Small Lady Dior Bag</h1>
+                <p class="product-price">$5,800</p>
+                
+                <div class="variants-section">
+                    <div class="color-section">
+                        <h3>Select Color</h3>
+                        <div class="color-options">
+                            <button class="color-option selected" data-color="gray" data-image="assets/gray.png" style="background-color: #808080;" aria-label="Gray color option">
+                                <span class="color-name">Gray</span>
+                            </button>
+                            <button class="color-option" data-color="black" data-image="assets/black.png" style="background-color: #000000;" aria-label="Black color option">
+                                <span class="color-name">Black</span>
+                            </button>
+                            <button class="color-option" data-color="red" data-image="assets/red.png" style="background-color: #8B0000;" aria-label="Red color option">
+                                <span class="color-name">Red</span>
+                            </button>
+                            <button class="color-option" data-color="purple" data-image="assets/purple.png" style="background-color: #800080;" aria-label="Purple color option">
+                                <span class="color-name">Purple</span>
+                            </button>
+                            <button class="color-option" data-color="yellow" data-image="assets/yellow.png" style="background-color: #FFD700;" aria-label="Yellow color option">
+                                <span class="color-name">Yellow</span>
+                            </button>
+                        </div>
+                        <button class="compare-colors-btn" id="compareColorsBtn">Compare Colors</button>
+                    </div>
+
+                    <div class="size-section">
+                        <h3>Select Size</h3>
+                        <div class="size-options">
+                            <button class="size-option">XS</button>
+                            <button class="size-option">S</button>
+                            <button class="size-option">M</button>
+                            <button class="size-option">L</button>
+                            <button class="size-option">XL</button>
+                        </div>
+                        <button class="size-chart-btn" id="sizeChartBtn">Size Chart</button>
+                    </div>
+                </div>
+
+                <h3 class="section-heading">Selected Options</h3>
+                <div class="selected-variants">
+                    <div class="selected-variant">
+                        <span class="variant-label">Color:</span>
+                        <span id="selectedColor">Gray</span>
+                    </div>
+                    <div class="selected-variant">
+                        <span class="variant-label">Size:</span>
+                        <span id="selectedSize">None</span>
+                    </div>
+                </div>
+
+                <div id="sizeSelectionMessage" class="size-selection-message">* Please select a size</div>
+                <button class="add-to-cart-btn" id="addToCartBtn" disabled>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pair Well With Section -->
+    <section class="pair-well-with">
+        <h2 class="section-title">Pair Well With</h2>
+        <div class="products-carousel">
+            <div class="products-wrapper">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/accessory1.png" alt="Dior Twilly">
+                        <span class="badge">New</span>
+                    </div>
+                    <h3 class="product-name">Dior Twilly</h3>
+                    <p class="product-price">$350</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/accessory2.png" alt="Dior Card Holder">
+                    </div>
+                    <h3 class="product-name">Dior Card Holder</h3>
+                    <p class="product-price">$450</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/accessory3.png" alt="Dior Key Chain">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <h3 class="product-name">Dior Key Chain</h3>
+                    <p class="product-price">$280</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/accessory4.png" alt="Dior Wallet">
+                    </div>
+                    <h3 class="product-name">Dior Wallet</h3>
+                    <p class="product-price">$550</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Bundle Section -->
+    <section class="product-bundle">
+        <h2 class="section-title">Buy Together and Save</h2>
+        <div class="bundle-container">
+            <div class="bundle-items">
+                <div class="bundle-item">
+                    <div class="bundle-image">
+                        <img src="assets/gray.png" alt="Small Lady Dior Bag">
+                    </div>
+                    <div class="bundle-details">
+                        <h3>Small Lady Dior Bag</h3>
+                        <p class="bundle-price">$5,800</p>
+                    </div>
+                </div>
+                <div class="bundle-plus">+</div>
+                <div class="bundle-item">
+                    <div class="bundle-image">
+                        <img src="assets/accessory1.png" alt="Dior Twilly">
+                    </div>
+                    <div class="bundle-details">
+                        <h3>Dior Twilly</h3>
+                        <p class="bundle-price">$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bundle-summary">
+                <div class="bundle-total">
+                    <span>Bundle Total:</span>
+                    <span class="total-price">$6,150</span>
+                </div>
+                <div class="bundle-savings">
+                    <span>You Save:</span>
+                    <span class="savings-amount">$150</span>
+                </div>
+                <button class="add-bundle-btn">Add Bundle to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Info Tabs Section -->
+    <section class="product-info">
+        <div class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="product-info">Product Information</button>
+                <button class="tab-btn" data-tab="shipping">Shipping Details</button>
+            </div>
+            <div class="tabs-content">
+                <div class="tab-panel active" id="description">
+                    <h3>Product Description</h3>
+                    <p>The Small Lady Dior bag is a timeless icon of the House of Dior. This elegant handbag features the signature Cannage pattern, inspired by the Napoleon III chairs in the Dior ateliers. Crafted from premium leather, it showcases exceptional craftsmanship and attention to detail.</p>
+                    <ul>
+                        <li>Dimensions: 20 x 16 x 8 cm</li>
+                        <li>Handle drop: 12 cm</li>
+                        <li>Shoulder strap drop: 50 cm</li>
+                        <li>Interior: 1 pocket</li>
+                        <li>Closure: Zipper</li>
+                    </ul>
+                </div>
+                <div class="tab-panel" id="product-info">
+                    <h3>Product Information</h3>
+                    <table class="info-table">
+                        <tr>
+                            <th>Material</th>
+                            <td>Premium Calfskin Leather</td>
+                        </tr>
+                        <tr>
+                            <th>Hardware</th>
+                            <td>Palladium-finished Metal</td>
+                        </tr>
+                        <tr>
+                            <th>Style</th>
+                            <td>Classic</td>
+                        </tr>
+                        <tr>
+                            <th>Collection</th>
+                            <td>Lady Dior</td>
+                        </tr>
+                        <tr>
+                            <th>Care Instructions</th>
+                            <td>Store in dust bag when not in use. Clean with soft, dry cloth.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-panel" id="shipping">
+                    <h3>Shipping Details</h3>
+                    <div class="shipping-info">
+                        <div class="shipping-option">
+                            <h4>Standard Shipping</h4>
+                            <p>Delivery within 3-5 business days</p>
+                            <p class="shipping-price">Free</p>
+                        </div>
+                        <div class="shipping-option">
+                            <h4>Express Shipping</h4>
+                            <p>Delivery within 1-2 business days</p>
+                            <p class="shipping-price">$25</p>
+                        </div>
+                        <div class="shipping-option">
+                            <h4>International Shipping</h4>
+                            <p>Delivery within 5-7 business days</p>
+                            <p class="shipping-price">$50</p>
+                        </div>
+                    </div>
+                    <div class="shipping-note">
+                        <p>* All orders are processed within 1-2 business days</p>
+                        <p>* International shipping available to select countries</p>
+                        <p>* Free returns within 30 days of delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <h2 class="section-title">Related Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/related1.png" alt="Medium Lady Dior Bag">
+                    <span class="badge">New</span>
+                </div>
+                <h3 class="product-name">Medium Lady Dior Bag</h3>
+                <p class="product-price">$6,500</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/related2.png" alt="Large Lady Dior Bag">
+                </div>
+                <h3 class="product-name">Large Lady Dior Bag</h3>
+                <p class="product-price">$7,200</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/related3.png" alt="Lady Dior Wallet">
+                    <span class="badge">Popular</span>
+                </div>
+                <h3 class="product-name">Lady Dior Wallet</h3>
+                <p class="product-price">$1,800</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/related4.png" alt="Lady Dior Clutch">
+                </div>
+                <h3 class="product-name">Lady Dior Clutch</h3>
+                <p class="product-price">$4,500</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Chart Modal -->
+    <div class="modal" id="sizeChartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Size Chart</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table class="size-chart-table">
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest (in)</th>
+                            <th>Waist (in)</th>
+                            <th>Hip (in)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XS</td>
+                            <td>34-36</td>
+                            <td>28-30</td>
+                            <td>34-36</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>36-38</td>
+                            <td>30-32</td>
+                            <td>36-38</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>38-40</td>
+                            <td>32-34</td>
+                            <td>38-40</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>40-42</td>
+                            <td>34-36</td>
+                            <td>40-42</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>42-44</td>
+                            <td>36-38</td>
+                            <td>42-44</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div class="modal" id="compareColorsModal">
+        <div class="modal-content compare-modal">
+            <div class="modal-header">
+                <h2>Compare Colors</h2>
+                <button class="modal-close" id="compareModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="compare-container">
+                    <div class="compare-item">
+                        <div class="main-image-container">
+                            <img src="assets/gray.png" alt="Small Lady Dior Bag" class="main-image" id="compareImage1">
+                        </div>
+                        <div class="compare-color-options">
+                            <button class="color-option selected" data-color="gray" data-image="assets/gray.png" style="background-color: #808080;" aria-label="Gray color option">
+                                <span class="color-name">Gray</span>
+                            </button>
+                            <button class="color-option" data-color="black" data-image="assets/black.png" style="background-color: #000000;" aria-label="Black color option">
+                                <span class="color-name">Black</span>
+                            </button>
+                            <button class="color-option" data-color="red" data-image="assets/red.png" style="background-color: #8B0000;" aria-label="Red color option">
+                                <span class="color-name">Red</span>
+                            </button>
+                            <button class="color-option" data-color="purple" data-image="assets/purple.png" style="background-color: #800080;" aria-label="Purple color option">
+                                <span class="color-name">Purple</span>
+                            </button>
+                            <button class="color-option" data-color="yellow" data-image="assets/yellow.png" style="background-color: #FFD700;" aria-label="Yellow color option">
+                                <span class="color-name">Yellow</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="compare-item">
+                        <div class="main-image-container">
+                            <img src="assets/gray.png" alt="Small Lady Dior Bag" class="main-image" id="compareImage2">
+                        </div>
+                        <div class="compare-color-options">
+                            <button class="color-option selected" data-color="gray" data-image="assets/gray.png" style="background-color: #808080;" aria-label="Gray color option">
+                                <span class="color-name">Gray</span>
+                            </button>
+                            <button class="color-option" data-color="black" data-image="assets/black.png" style="background-color: #000000;" aria-label="Black color option">
+                                <span class="color-name">Black</span>
+                            </button>
+                            <button class="color-option" data-color="red" data-image="assets/red.png" style="background-color: #8B0000;" aria-label="Red color option">
+                                <span class="color-name">Red</span>
+                            </button>
+                            <button class="color-option" data-color="purple" data-image="assets/purple.png" style="background-color: #800080;" aria-label="Purple color option">
+                                <span class="color-name">Purple</span>
+                            </button>
+                            <button class="color-option" data-color="yellow" data-image="assets/yellow.png" style="background-color: #FFD700;" aria-label="Yellow color option">
+                                <span class="color-name">Yellow</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
